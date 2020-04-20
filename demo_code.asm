@@ -1,28 +1,28 @@
 ORG 0
 
 Main:
-    LOADI   &H0003
+    LOADI   &H03
     OUT     SRAM_ADHI_00
-    LOADI   &HBEEF
+    LOADI   &HAA
     OUT     SRAM_DATA_EN
 
-    LOADI   &H0006
+    LOADI   &H06
     OUT     SRAM_ADHI_00
-    LOADI   &HCAFE
+    LOADI   &HBB
     OUT     SRAM_DATA_EN
 
-    LOADI   &H0003
+    LOADI   &H03
     OUT     SRAM_ADHI_00
     IN      SRAM_DATA_EN
 
-    LOADI   &H0006
+    LOADI   &H06
     OUT     SRAM_ADHI_00
     IN      SRAM_DATA_EN
 
     ADDI    1
     OUT     SRAM_DATA_EN
 
-    LOADI   &H0025
+    LOADI   &H25
     OUT     SRAM_ADHI_00
     IN      SRAM_DATA_EN
 
